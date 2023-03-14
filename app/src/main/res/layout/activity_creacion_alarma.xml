@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creacion_alarma">
+
+    <!--on below line we are creating a text view-->
+
+    <!--on below line we are creating
+        a button for date picker-->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/idBtnPickDate"-->
+<!--        android:layout_width="138dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:text="Pick Date"-->
+<!--        android:textAllCaps="false"-->
+<!--        tools:layout_editor_absoluteX="233dp"-->
+<!--        tools:layout_editor_absoluteY="175dp" />-->
+
+    <TextView
+        android:id="@+id/idTVSelectedDate"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_above="@id/idBtnPickDate"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <Button
+        android:id="@+id/idBtnPickDate"
+        android:layout_width="158dp"
+        android:layout_height="54dp"
+
+        android:background="@null"
+        android:drawableRight="@drawable/ic_outline_calendar_today_24"
+
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@+id/idTVSelectedDate"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="325dp"
+        android:layout_height="29dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="318dp"
+        android:layout_height="88dp"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="178dp"
+        android:layout_height="98dp"
+        app:srcCompat="@drawable/group_12"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
