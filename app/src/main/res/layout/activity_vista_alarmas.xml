@@ -27,12 +27,12 @@
         android:layout_width="296dp"
         android:layout_height="67dp"
         android:enabled="false"
-        android:text="Switch"
+        android:text="Hola"
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="120dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/agregar_alarma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_baseline_add_circle_24"
@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteY="61dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/alarmar_activa"
         android:layout_width="21dp"
         android:layout_height="24dp"
         app:srcCompat="@drawable/icon"
@@ -48,7 +48,7 @@
         tools:layout_editor_absoluteY="61dp" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/configuracion"
         android:layout_width="23dp"
         android:layout_height="25dp"
         app:srcCompat="@drawable/group_19"
