@@ -1,6 +1,7 @@
 package com.vynils.myapplication
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,7 @@ class creacion_alarma : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_creacion_alarma)
+        title = "Alarma Nueva"
         // on below line we are initializing our variables.
         pickDateBtn = findViewById(R.id.idBtnPickDate)
         selectedDateTV = findViewById(R.id.idTVSelectedDate)
@@ -42,7 +44,7 @@ class creacion_alarma : AppCompatActivity() {
                     // on below line we are setting
                     // date to our text view.
                     selectedDateTV.text =
-                        (dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year)
+                        (dayOfMonth.toString() + "/" + (monthOfYear + 1) + "/" + year)
                 },
                 // on below line we are passing year, month
                 // and day for the selected date in our date picker.
@@ -53,6 +55,17 @@ class creacion_alarma : AppCompatActivity() {
             // at last we are calling show
             // to display our date picker dialog.
             datePickerDialog.show()
+        }
+        val button: Button = findViewById(R.id.cancelar)
+        button.setOnClickListener {
+            val intent = Intent(this, vista_alarmas::class.java)
+            startActivity(intent)
+        }
+
+        val button1: Button = findViewById(R.id.aceptar)
+        button1.setOnClickListener {
+            val intent = Intent(this, vista_alarmas::class.java)
+            startActivity(intent)
         }
     }
 }

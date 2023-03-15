@@ -11,22 +11,29 @@
         android:id="@+id/imageView9"
         android:layout_width="278dp"
         android:layout_height="33dp"
-        app:srcCompat="@drawable/alarma_mi_ciclo__2_"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarma_mi_ciclo__2_" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="305dp"
         android:layout_height="303dp"
-        app:srcCompat="@drawable/imageinicio"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="122dp" />
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/imageinicio" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="125dp"
         android:layout_height="25dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/nunito"
         android:foregroundGravity="center"
@@ -35,13 +42,16 @@
         android:textSize="13sp"
         android:textStyle="bold"
         app:backgroundTint="#FFE4F2"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="125dp"
         android:layout_height="25dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/nunito"
         android:foregroundGravity="center"
@@ -50,13 +60,16 @@
         android:textSize="13sp"
         android:textStyle="bold"
         app:backgroundTint="#F9F48C"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="486dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="125dp"
         android:layout_height="25dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/nunito"
         android:foregroundGravity="center"
@@ -65,13 +78,16 @@
         android:textSize="13sp"
         android:textStyle="bold"
         app:backgroundTint="#806EBF"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="528dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="125dp"
         android:layout_height="25dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/nunito"
         android:foregroundGravity="center"
@@ -80,13 +96,16 @@
         android:textSize="13sp"
         android:textStyle="bold"
         app:backgroundTint="#F98C8C"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="570dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/iniciar"
         android:layout_width="112dp"
         android:layout_height="42dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/nunito"
         android:text="Iniciar"
@@ -94,7 +113,9 @@
         android:textColor="@android:color/white"
         android:textSize="14sp"
         app:backgroundTint="#b00a05"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="649dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,38 +10,37 @@
         android:id="@+id/imageView9"
         android:layout_width="278dp"
         android:layout_height="33dp"
-        app:srcCompat="@drawable/alarma_mi_ciclo__2_"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="26dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarma_mi_ciclo__2_" />
+
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/black"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="69dp" />
-
-    <!--    <Button-->
-<!--        android:id="@+id/idBtnPickDate"-->
-<!--        android:layout_width="138dp"-->
-<!--        android:layout_height="45dp"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_margin="20dp"-->
-<!--        android:text="Pick Date"-->
-<!--        android:textAllCaps="false"-->
-<!--        tools:layout_editor_absoluteX="233dp"-->
-<!--        tools:layout_editor_absoluteY="175dp" />-->
+        android:layout_marginTop="16dp"
+        android:background="#1A000000"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito"
         android:text="Fecha última menstruación:"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
 
     <TextView
         android:id="@+id/idTVSelectedDate"
@@ -49,120 +48,146 @@
         android:layout_height="42dp"
         android:layout_above="@id/idBtnPickDate"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Date"
+        android:text="01/01/1999"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="144dp" />
-
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/idBtnPickDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idBtnPickDate"
+        app:layout_constraintTop_toTopOf="@+id/idBtnPickDate" />
 
     <Button
         android:id="@+id/idBtnPickDate"
-        android:layout_width="158dp"
-        android:layout_height="54dp"
-
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
         android:background="@null"
-        android:drawableRight="@drawable/ic_outline_calendar_today_24"
 
+        android:drawableRight="@drawable/ic_outline_calendar_today_24"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:text="@+id/idTVSelectedDate"
-        android:textAlignment="textStart"
-        android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="144dp" />
-
+        app:backgroundTint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito"
         android:text="Seleccione fase a notificar:"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnPickDate" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="332dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FF9CF4"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:entries="@array/spinnerItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/nunito"
         android:text="Alarma a las:"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
 
     <TimePicker
         android:id="@+id/timePicker1"
         android:layout_width="318dp"
         android:layout_height="88dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
         android:timePickerMode="spinner"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="389dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito"
         android:text="Se notificará  el 16 de febrero"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="492dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker1" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="178dp"
         android:layout_height="98dp"
-        app:srcCompat="@drawable/group_12"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="536dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/group_12" />
 
     <Button
         android:id="@+id/cancelar"
         android:layout_width="102dp"
         android:layout_height="37dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/rounded_corner"
-        android:text="Cancelar"
-        android:textColor="@color/black"
         android:fontFamily="@font/nunito"
+        android:text="Cancelar"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:backgroundTint="#e4ccda"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="678dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.058" />
 
     <Button
         android:id="@+id/aceptar"
         android:layout_width="102dp"
         android:layout_height="37dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/nunito"
         android:text="Aceptar"
         android:textAllCaps="false"
-        android:fontFamily="@font/nunito"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         app:backgroundTint="#FF9CF4"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="678dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cancelar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.058" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
