@@ -6,18 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".creacion_alarma">
 
-    <!--on below line we are creating a text view-->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="278dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/alarma_mi_ciclo__2_"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="26dp" />
 
-    <!--on below line we are creating
-        a button for date picker-->
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="105dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp" />
 
     <!--    <Button-->
 <!--        android:id="@+id/idBtnPickDate"-->
@@ -29,6 +31,17 @@
 <!--        android:textAllCaps="false"-->
 <!--        tools:layout_editor_absoluteX="233dp"-->
 <!--        tools:layout_editor_absoluteY="175dp" />-->
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Fecha última menstruación:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <TextView
         android:id="@+id/idTVSelectedDate"
@@ -47,12 +60,6 @@
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="144dp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/black"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="87dp" />
 
     <Button
         android:id="@+id/idBtnPickDate"
@@ -67,30 +74,38 @@
         android:text="@+id/idTVSelectedDate"
         android:textAlignment="textStart"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Seleccione fase a notificar:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="332dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF9CF4"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="284dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="224dp" />
-
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="325dp"
-        android:layout_height="29dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="276dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="30dp"
+        android:fontFamily="@font/nunito"
+        android:text="Alarma a las:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="137dp"
         tools:layout_editor_absoluteY="340dp" />
 
     <TimePicker
@@ -102,29 +117,17 @@
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="389dp" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="638dp" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="636dp" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="487dp" />
+        android:fontFamily="@font/nunito"
+        android:text="Se notificará  el 16 de febrero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="492dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -132,6 +135,34 @@
         android:layout_height="98dp"
         app:srcCompat="@drawable/group_12"
         tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="518dp" />
+        tools:layout_editor_absoluteY="536dp" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Cancelar"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="#e4ccda"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="678dp" />
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Aceptar"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#FF9CF4"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="678dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,53 +6,237 @@
     android:layout_height="match_parent"
     tools:context=".vista_alarmas">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="299dp"
-        android:layout_height="69dp"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="212dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="452dp" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="278dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/alarma_mi_ciclo__2_"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="26dp" />
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="296dp"
-        android:layout_height="67dp"
-        android:enabled="false"
-        android:text="Hola"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="120dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp" />
+
 
     <ImageView
         android:id="@+id/agregar_alarma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
         app:srcCompat="@drawable/ic_baseline_add_circle_24"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="61dp" />
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="100dp" />
 
     <ImageView
         android:id="@+id/alarmar_activa"
-        android:layout_width="21dp"
-        android:layout_height="24dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:srcCompat="@drawable/icon"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="61dp" />
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="103dp" />
 
     <ImageView
         android:id="@+id/configuracion"
-        android:layout_width="23dp"
-        android:layout_height="25dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:srcCompat="@drawable/group_19"
-        tools:layout_editor_absoluteX="372dp"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
+        android:background="@drawable/icon_rectangel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="9:15 AM"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Menstruación"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:checked="true"
+        android:fontFamily="@font/nunito"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:thumb="@drawable/bg_thumb"
+        android:track="@drawable/bg_track"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+
+    <View
+        android:id="@+id/myRectangleView1"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
+        android:background="@drawable/icon_rectangel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="1:15 PM"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Ovulación"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:checked="false"
+        android:fontFamily="@font/nunito"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:thumb="@drawable/bg_thumb"
+        android:track="@drawable/bg_track"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <View
+        android:id="@+id/myRectangleView2"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
+        android:background="@drawable/icon_rectangel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="2:15 PM"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Días infértil"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:checked="true"
+        android:fontFamily="@font/nunito"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:thumb="@drawable/bg_thumb"
+        android:track="@drawable/bg_track"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <View
+        android:id="@+id/myRectangleView3"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
+        android:background="@drawable/icon_rectangel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="3:15 PM"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Días  fértil"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:checked="true"
+        android:fontFamily="@font/nunito"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:thumb="@drawable/bg_thumb"
+        android:track="@drawable/bg_track"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <Button
+        android:id="@+id/inicio"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/nunito"
+        android:hapticFeedbackEnabled="false"
+        android:text="Inicio"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#e4ccda"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="585dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
