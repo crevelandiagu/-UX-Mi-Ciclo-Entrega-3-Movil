@@ -41,6 +41,7 @@ entrega del proyecto de movil del curso de UX experiencia de usuario
 7. Git
 
 ## Recomendaciones
-Cuando tenga el proyecto abierto en android studio en la parte superior izquierda encontrara el nombre
+1. Cuando tenga el proyecto abierto en android studio en la parte superior izquierda encontrara el nombre
 project en donde podra escojer como ver la jerarquia de las carpetas, se recomienda escojer la que dice
 Android.
+2. En la vista de Android, antes mencioanda en la carpeta *res>drawable* encontrara todas las imagenes y configuracions de estilo usadas 
