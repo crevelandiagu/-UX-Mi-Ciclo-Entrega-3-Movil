@@ -1,47 +1,45 @@
-# Aplicacion Mi Ciclo para UX
+# App Mi Ciclo - UX Design
 
-En este repositorio se encuentra el código de la
-entrega del proyecto de movil del curso de UX experiencia de usuario 
+This repository contains the code for the activity Maquetacion Frontend Mobile.
 
 
-# Estructura
+# Structure
 ````
-├── apk_MiCiclo             # apk de la aplicacion Mi Ciclo 
-├── app                     # Aplicacion y codigo principal
-├── gradle                  # Archivo de configuración de la entrega
-├── .gitignore              # Archivo con la lista de carpetas que no suben la repositorio
-├── build.gradle            # Archivo de configuración de la entrega
-├── gradle.properties       # Archivo de propiedades de la entrega
-├── gradlew                 # Archivo de configuración de la entrega
-├── settings.gradle         # Archivo de configuración de la entrega
-└── README.md               # Estás aquí
+├── apk_MiCiclo             # Application APK
+├── app                     # App and code
+├── gradle                  # Config file
+├── .gitignore              # Skipped files and folders
+├── build.gradle            # Config file
+├── gradle.properties       # Properties file
+├── gradlew                 # Config file
+├── settings.gradle         # Config file
+└── README.md               # You're here
 ````
 
-## Como ejecutar localmente la aplicación 
+## How to run the app locally
 
-1. Abra el proyecto en Andorid Studio 
-2. Sincronice el proyecto con el gradle en la parte superior derecha vera un elefante con una flecha azul
-3. En la parte superiro derecha encontrar al lado del elefante un icono de celular donde podra configurar el emulador
-4. Despues de crear y iniciar el emulador con el boton play. En la parte superiro derecha encontrar el boton play en verde
-5. En el emulador quedara la aplicacion instalada
-
-
-## Como ejecutar con el apg
-
-1. Abierto el emulador arrastre el apk de la carpeta *apk_MiCiclo*, la emulador y ella se intalara sola
+1. Open the app in Andorid Studio 
+2. Sync the gradle.
+3. Configure the emulator. Note: this app was tested in an Pixel 6 PRO and Pixel 5
+4. Click on the Play button, making sure the app is what will be run.
+5. Once the compilation and installation finishes, the app will be launched in the emulator.
 
 
-## Tecnologias utilizadas
+## How to run with the apk
+
+1. Open the emulator.
+2. Drag and drop the apk from the folder *apk_MiCiclo* to the Emulator, the app will be automatically installed.
+
+
+## Technoloty and tools
 1. Kotlin
 2. Android Studio
 3. XML
 4. Figma
-5. Imagenes en vectores
+5. Vector images
 6. PNG 
 7. Git
 
-## Recomendaciones
-1. Cuando tenga el proyecto abierto en android studio en la parte superior izquierda encontrara el nombre
-project en donde podra escojer como ver la jerarquia de las carpetas, se recomienda escojer la que dice
-Android.
-2. En la vista de Android, antes mencioanda en la carpeta *res>drawable* encontrara todas las imagenes y configuracions de estilo usadas 
+## Recommendations
+1. In Android Studio, on the left side of the window, set the hierarchy view as Android, this will make the navigation easier.
+2. In Android view, under the folder *res>drawable*, you can find the images and configuration used in the project.
